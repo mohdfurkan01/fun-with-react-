@@ -1,8 +1,15 @@
-# React + Vite
+### File and Folder Structuer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. To make our React project more straightforward and focus on learning or building, we can clean up the folder structure by removing unnecessary files.
 
-Currently, two official plugins are available:
+assets
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+App.css
+
+index.css
+
+Helps you understand what’s going on in your project.
+
+Reduces clutter, especially when starting fresh.
+
+If we need those files later (like CSS for styling), we can create them as needed.
