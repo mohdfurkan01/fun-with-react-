@@ -28,7 +28,7 @@ The convention is to use a capitalized first letter (PascalCase) for component f
 
 Should also start with a capital letter, like function MyComponent() { ... }.
 
-```
+```javascript
 function mycomponent() {
   return <h1>Hello</h1>;
 }
