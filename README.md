@@ -8,24 +8,22 @@ Component function names (function MyComponent() { ... }).
 
 ### Documnrtation
 
+React Fiber✅⚡🔥✨=>: https://github.com/acdlite/react-fiber-architecture
+
 Official page: https://react.dev/
 
-command✅⚡🔥✨=> npx create-react-app myapp
-
 Vite: https://vite.dev/guide/
-
-command✅⚡🔥✨=>=> npm create vite@latest
 
 gitHub: https://github.com/facebook/react
 OR:https://github.com/facebook/react/tree/main/packages/react
 
 vite project faster than normal npx command:
 
-normal: npx crate-react-app myapp ( npm run start)
+normal command✅⚡🔥✨=>: npx crate-react-app myapp ( npm run start)
 
-vite: npm create vite@latest 💹faster ( npm run dev)
+vite command✅⚡🔥✨=>: npm create vite@latest 💹faster ( npm run dev)
 
-for vite don't forget 🈯npm install
+for vite don't forget ✅npm install
 
 Using Vite to set up a React project is generally faster than using Create React App (CRA) because Vite is designed to be highly performant, especially during development. Here's why:
 
