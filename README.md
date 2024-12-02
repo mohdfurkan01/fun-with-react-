@@ -1,10 +1,21 @@
 "# fun-with-react-"
 
+lec no: 3
+
+Always capitalize the first letter of both:
+
+File names (MyComponent.jsx)
+
+Component function names (function MyComponent() { ... }).
+
 ### Documnrtation
 
 Official page: https://react.dev/
 
 Vite: https://vite.dev/guide/
+
+gitHub: https://github.com/facebook/react
+OR:https://github.com/facebook/react/tree/main/packages/react
 
 vite project faster than normal npx command:
 
