@@ -1,7 +1,5 @@
 "# fun-with-react-"
 
-lec no: 3
-
 Always capitalize the first letter of both:
 
 File names (MyComponent.jsx)
