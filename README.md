@@ -10,7 +10,11 @@ Component function names (function MyComponent() { ... }).
 
 Official page: https://react.dev/
 
+command✅⚡🔥✨=> npx create-react-app myapp
+
 Vite: https://vite.dev/guide/
+
+command✅⚡🔥✨=>=> npm create vite@latest
 
 gitHub: https://github.com/facebook/react
 OR:https://github.com/facebook/react/tree/main/packages/react
