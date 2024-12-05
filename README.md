@@ -31,3 +31,9 @@ Using Vite to set up a React project is generally faster than using Create React
 
 Instant Dev Server: Vite uses a modern dev server powered by ES modules, which means it doesn't need to bundle the entire app during development. CRA, on the other hand, relies on Webpack, which can be slower.
 On-Demand Compilation: Vite compiles code only when it's needed, making the dev server startup time much faster.
+
+Tailwind✅⚡🔥✨=> https://tailwindcss.com/docs/guides/vite
+
+(custom component)Must try it 1st🔥: https://devuiv2.vercel.app/templates
+
+2nd🔥: https://www.devui.in/components/hero
