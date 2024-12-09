@@ -2,8 +2,8 @@
 // import { useNavigate } from "react-router-dom";
 
 //  const Card = (props) => {
-//    console.log("props=========>", props);
-// console.log("props=========>", props.username);
+//    console.log("props=======>", props);
+// console.log("props=======>", props.username);
 // const Card = ({ username, positionTxt }) => {
 //   obj destructring bar bar prop.this or that nhi likhna pdega direct access h
 //   console.log("props=========>", username);
