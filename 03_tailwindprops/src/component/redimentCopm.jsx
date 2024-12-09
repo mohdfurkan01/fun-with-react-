@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function RedimentCopm() {
   return (
@@ -39,9 +40,14 @@ const Nav = () => {
         <div className="sm:flex justify-around hidden">
           {navData.map((n, index) => {
             return (
-              <a href={n.href} key={index}>
-                <h1 className="mx-4 font-jostRegular text-2xl  ">{n.name}</h1>
-              </a>
+              // <a href={n.href} key={index}>
+              //   <h1 className="mx-4 font-jostRegular text-2xl  ">{n.name}</h1>
+              // </a>
+              <Link to={n.href} key={index}>
+                {" "}
+                {/* Change from <a> to <Link> */}
+                <h1 className="mx-4 font-jostRegular text-2xl">{n.name}</h1>
+              </Link>
             );
           })}
         </div>
@@ -51,7 +57,7 @@ const Nav = () => {
             type="button"
             className="bg-[#EEF4FF] rounded-xl w-[170px] h-[60px] text-[#3E3FD8] "
           >
-            Sign Up
+            Email Me
           </button>
         </div>
       </div>

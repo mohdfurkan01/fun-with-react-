@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Practice = () => {
   const checkOut = () => {
     alert("just for confirmation");
+  };
+
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+    // After form submission or some action, navigate to home
+    navigate("/");
   };
 
   return (
@@ -128,6 +136,15 @@ const Practice = () => {
             Free shipping on all continental US orders.
           </p>
         </form>
+
+        <div className="flex justify-center items-center h-screen">
+          <button
+            onClick={handleSubmit}
+            className="px-6 py- bg-blue-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300"
+          >
+            Go to Home
+          </button>
+        </div>
       </div>
     </>
   );

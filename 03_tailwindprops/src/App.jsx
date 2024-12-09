@@ -41,7 +41,12 @@ function App() {
             path="/card"
             element={
               <div>
-                <Card username="first_card" positionTxt="Frontend Developer" />
+                <Card
+                  username="first_card"
+                  positionTxt="Frontend Developer"
+                  showButton={true}
+                />
+
                 <br />
                 <Card username="second_card" positionTxt="Backend Developer" />
                 <br />
