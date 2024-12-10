@@ -38,7 +38,7 @@ function App() {
 
     passwordRef.current?.focus();
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0, 5);
+    passwordRef.current?.setSelectionRange(0, 99);
     window.navigator.clipboard.writeText(password);
   }, [password]);
 
