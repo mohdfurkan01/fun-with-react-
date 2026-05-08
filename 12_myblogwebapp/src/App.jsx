@@ -7,6 +7,7 @@ import { login, logout } from "./store/authSlice";
 import { Header, Footer } from "./components/index";
 import { Outlet } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
           this contnet coming from app.jsx <Outlet />
         </main>
         <Footer />
+        <ToastContainer />
       </div>
     </div>
   ) : null;
