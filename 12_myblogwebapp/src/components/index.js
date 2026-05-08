@@ -11,8 +11,9 @@ import AuthLayout from "./AuthLayout";
 import PostForm from "./post-form/PostForm";
 import RTE from "./RTE";
 import Signup from "./Signup";
+import Loader from "./Loader";
 
-export { Header, Footer, Container, Logo, LogoutBtn, Button, Input, Login, Signup, PostCard, AuthLayout, PostForm, RTE };
+export { Header, Footer, Container, Logo, LogoutBtn, Button, Input, Login, Signup, PostCard, AuthLayout, PostForm, RTE, Loader };
 
 //input color is changed due to forwardRef syntax
 

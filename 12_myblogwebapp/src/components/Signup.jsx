@@ -5,7 +5,7 @@ import {login} from '../store/authSlice'
 import {Button, Input, Logo} from './index'
 import {useDispatch} from 'react-redux'
 import {useForm} from 'react-hook-form'
-import {toast} from 'react-toastify'
+import { toast } from 'react-hot-toast'
 
 function Signup() {
     const navigate = useNavigate()

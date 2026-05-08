@@ -5,7 +5,7 @@ import {Button, Input, Logo} from "./index"
 import {useDispatch} from "react-redux"
 import authService from "../appwrite/auth"
 import {useForm} from "react-hook-form"
-import {toast} from 'react-toastify'
+import { toast } from 'react-hot-toast'
 
 function Login() {
     const navigate = useNavigate()
