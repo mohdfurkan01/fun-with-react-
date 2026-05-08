@@ -21,7 +21,7 @@ export class AuthService {
         ID.unique(),
         email,
         password,
-        name
+        name,
       );
       if (userAccount) {
         //call another method

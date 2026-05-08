@@ -1,13 +1,13 @@
 import config from "../config/config";
 
-import { Client, Account, ID, Databases, Storage } from "appwrite";
+import { Client, Account, ID, Databases, Storage, Query } from "appwrite";
 
 export class Service {
   client = new Client();
   databases;
   buckets;
 
-  cunstructor() {
+  constructor() {
     this.client
       .setEndpoint(config.appwriteUrl)
       .setProject(config.appwriteProjectId);
@@ -27,7 +27,7 @@ export class Service {
           content,
           featuredImage,
           status,
-          userId,
+          UserId: userId,
         }
       );
     } catch (error) {
@@ -39,7 +39,7 @@ export class Service {
   async updatePost(slug, { title, content, featuredImage, status }) {
     try {
       return await this.databases.updateDocument(
-        config.appwriteProjectId,
+        config.appwriteDatabaseId,
         config.appwriteCollectionId,
         slug,
         {
@@ -129,7 +129,7 @@ export class Service {
   //file preview
   //without async bcoz direct access of url, response is fast
   getFilePreview(fileId) {
-    return this.buckets.getFilePreview(config.appwriteBucketId, fileId);
+    return this.buckets.getFileView(config.appwriteBucketId, fileId);
   }
 }
 
