@@ -42,8 +42,19 @@ export default function Post() {
   if (!post) return null;
 
   return (
-    <div className="py-8">
+    <div className="py-12 bg-white min-h-screen">
       <Container>
+        <div className="mb-6 flex items-center">
+            <button 
+                onClick={() => navigate(-1)}
+                className="flex items-center text-slate-600 hover:text-blue-600 font-medium transition-colors group"
+            >
+                <svg className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Go Back
+            </button>
+        </div>
         <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
           <img
             src={appwriteService.getFilePreview(post.featuredImage)}
