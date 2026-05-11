@@ -8,6 +8,7 @@ import store from "./store/store.js";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import AllPosts from "./pages/AllPosts.jsx";
+import PostsList from "./pages/PostsList.jsx";
 import AddPost from "./pages/AddPost.jsx";
 import { AuthLayout } from "./components/index.js";
 
@@ -30,6 +31,14 @@ const router = createBrowserRouter([
         element: (
             <AuthLayout authentication>
                 <AllPosts />
+            </AuthLayout>
+        ),
+      },
+      {
+        path: "/posts-list",
+        element: (
+            <AuthLayout authentication>
+                <PostsList />
             </AuthLayout>
         ),
       },
