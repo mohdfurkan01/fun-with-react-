@@ -220,14 +220,27 @@ export default function PostForm({post}) {
                         </select>
                     </div>
 
-                    <Button 
-                        type="submit" 
-                        bgColor={isButtonActive ? "bg-emerald-500" : "bg-gray-400"} 
-                        className={`w-full py-3 text-lg font-bold rounded-xl shadow-lg transition-all duration-500 ${isButtonActive ? "hover:bg-emerald-600 hover:shadow-emerald-200" : "cursor-not-allowed"}`}
-                        disabled={!isButtonActive}
-                    >
-                        {post ? "Update Post" : "Publish Post"}
-                    </Button>
+                    <div className="flex gap-3 mt-4">
+                        {post && (
+                            <Button 
+                                type="button"
+                                onClick={() => navigate(`/post/${post.$id}`)}
+                                bgColor="bg-white"
+                                textColor="text-slate-600"
+                                className="w-1/3 py-3 font-semibold rounded-xl border border-gray-200 hover:bg-gray-50 hover:text-blue-600 transition-all duration-300"
+                            >
+                                Cancel
+                            </Button>
+                        )}
+                        <Button 
+                            type="submit" 
+                            bgColor={isButtonActive ? "bg-emerald-500" : "bg-gray-400"} 
+                            className={`${post ? 'w-2/3' : 'w-full'} py-3 text-lg font-bold rounded-xl shadow-lg transition-all duration-500 ${isButtonActive ? "hover:bg-emerald-600 hover:shadow-emerald-200" : "cursor-not-allowed"}`}
+                            disabled={!isButtonActive}
+                        >
+                            {post ? "Update Post" : "Publish Post"}
+                        </Button>
+                    </div>
                 </div>
             </form>
         </>
