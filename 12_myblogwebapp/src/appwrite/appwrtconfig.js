@@ -14,6 +14,7 @@ export class Service {
     this.databases = new Databases(this.client);
     this.buckets = new Storage(this.client);
   }
+  
 
   //create post
   async createPost({ title, slug, content, featuredImage, status, userId }) {
