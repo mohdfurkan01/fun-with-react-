@@ -4,24 +4,28 @@ import Logo from '../Logo'
 
 function Footer() {
   return (
-    <section className="relative overflow-hidden py-10 bg-gray-400 border-t-2 border-t-black">
-            <div className="relative z-10 mx-auto max-w-7xl px-4">
-                <div className="-m-6 flex flex-wrap">
-                    <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-                        <div className="flex h-full flex-col justify-between">
-                            <div className="mb-4 inline-flex items-center">
-                                <Logo width="100px" />
-                            </div>
-                            <div>
-                                <p className="text-sm text-gray-600">
-                                    &copy; Copyright 2023. All Rights Reserved by DevUI.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+    <footer className="py-12 bg-slate-900 border-t border-slate-800">
+        <div className="mx-auto max-w-7xl px-4">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div className="flex flex-col items-center md:items-start gap-4">
+                    <Logo width="120px" />
+                    <p className="text-sm text-slate-400 text-center md:text-left max-w-xs">
+                        The ultimate destination for tech insights and creative stories. Built with React and Appwrite.
+                    </p>
+                </div>
+                <div className="flex gap-8">
+                    <Link to="/" className="text-slate-400 hover:text-white transition-colors">Home</Link>
+                    <Link to="/all-posts" className="text-slate-400 hover:text-white transition-colors">All Posts</Link>
+                    <Link to="/signup" className="text-slate-400 hover:text-white transition-colors">Join Us</Link>
                 </div>
             </div>
-        </section>
+            <div className="mt-12 pt-8 border-t border-slate-800 text-center">
+                <p className="text-sm text-slate-500">
+                    &copy; {new Date().getFullYear()} Antigravity Blog. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
   )
 }
 

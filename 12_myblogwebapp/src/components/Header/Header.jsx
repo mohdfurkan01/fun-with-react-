@@ -38,28 +38,27 @@ function Header() {
 
 
   return (
-    <header className='py-3 shadow bg-gray-500'>
+    <header className='sticky top-0 z-50 py-4 glass shadow-sm'>
       <Container>
-        <nav className='flex'>
+        <nav className='flex items-center'>
           <div className='mr-4'>
             <Link to='/'>
-              <Logo width='70px'   />
-
-              </Link>
+              <Logo width='120px' />
+            </Link>
           </div>
-          <ul className='flex ml-auto'>
+          <ul className='flex ml-auto items-center space-x-2'>
             {navItems.map((item) => 
             item.active ? (
               <li key={item.name}>
                 <button
                 onClick={() => navigate(item.slug)}
-                className='inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
+                className='inline-block px-4 py-2 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200'
                 >{item.name}</button>
               </li>
             ) : null
             )}
             {authStatus && (
-              <li>
+              <li className="ml-2 border-l border-slate-200 pl-4">
                 <LogoutBtn />
               </li>
             )}
