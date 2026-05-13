@@ -16,3 +16,14 @@ body {
 .glass {
   @apply bg-white/80 backdrop-blur-md border border-white/20;
 }
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 300% 300% !important;
+  animation: gradientAnimation 4s ease infinite !important;
+}
